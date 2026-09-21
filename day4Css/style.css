@@ -1,0 +1,11 @@
+h1{
+    color: antiquewhite;
+    background-color:rgb(101, 6, 12) ;
+    text-align: center;
+}
+
+button{
+    background-color: orange;
+    color: rgb(9, 11, 11);
+    text-align: center;
+}
