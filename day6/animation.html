@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .box{
+            background-color: aqua;
+            height: 100px;
+            width: 100px;
+            animation-name: changecolor;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+
+        }
+
+        /* @keyframes changecolor{
+
+            from{background-color: aqua;}
+
+            to{background-color: rgb(167, 5, 80);}
+        } */
+
+      /* @keyframes changecolor{
+        
+        0% {background-color: aqua;}
+
+        40%{background-color: aquamarine;}
+
+        50%{background-color: brown;}
+
+        76%{background-color: blueviolet;}
+
+       100%{background-color: crimson;}
+      } */
+
+      @keyframes changecolor{
+        0%{transform: translateX(500px); background-color: crimson;}
+
+        40%{transform: translateY(200px); background-color: coral;} 
+        
+        72%{transform: translateX(0); background-color: blue;}
+
+        100%{transform: translateY(200px); background-color: cornflowerblue;}
+      }
+
+    </style>
+</head>
+<body>
+    <div class="box">.</div>
+    <strong>Animation effect goes back to its original form after completing</strong>
+</body>
+</html>

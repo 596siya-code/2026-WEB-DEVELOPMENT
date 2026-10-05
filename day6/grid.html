@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        
+         
+         .product{
+
+            display: grid;
+            /* grid-template-columns: 200px 200px; */
+            /* grid-template-columns: 1fr 1fr; */
+            /* grid-template-columns: repeat(No.of column, size of column); */
+            /* grid-template-columns: repeat(7,1fr  1fr); */
+
+            grid-template-columns: repeat( auto-fit ,minmax(200px,1fr ) );
+            gap: 20px;
+            text-align: center;
+         }
+        .box{
+            border: 1px solid black;
+            background-color: aquamarine;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="product">
+        <div class="box">Cake</div>
+        <div class="box">Cake-price</div>
+        <div class="box">Cookie</div>
+        <div class="box">Cookie-price</div>
+        <div class="box">pastry</div>
+        <div class="box">pastry-price</div>
+
+
+
+    </div>
+</body>
+</html>

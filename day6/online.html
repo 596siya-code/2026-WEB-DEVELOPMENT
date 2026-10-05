@@ -4,26 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
+</head>
+<body>
+        <style>
         
             body{
                 font-family: Arial;
-                background-color: #dcc6c6;
+                background-color: #f9f9f9;
                 height: 100vh;
 
 
-                display: flex;
-                justify-content: center;
-                gap: 22px;
-                align-items: center;
-                flex-wrap: wrap;
+            }
+
+            .ecom{
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(250px,1fr)) ;
+                gap: 20px;
             }
 
 
         .product{
             border: 1px solid black;
             border-radius: 12px;
-            width: 250px;
+            
 
             padding: 12px;
             margin-bottom: 15px;
@@ -63,7 +66,7 @@
     </style>
 </head>
 <body>
-
+    <div class="ecom"> 
     <div class="product">
         <img src="https://images.pexels.com/photos/8356854/pexels-photo-8356854.jpeg" >
         <h2>Headphone</h2>
@@ -91,6 +94,25 @@
         <h2>Shoes</h2>
         <p>Rs 4,999</p>
         <button>Buy Now</button>
+    </div>
+
+
+     <div class="product">
+        <img src="https://images.pexels.com/photos/8356854/pexels-photo-8356854.jpeg" >
+        <h2>Headphone</h2>
+        <p>Rs 2,499</p>
+        <button>Buy Now</button>
+    </div>
+    
+
+    <div class="product">
+        <img src="https://images.pexels.com/photos/8356854/pexels-photo-8356854.jpeg" >
+        <h2>Headphone</h2>
+        <p>Rs 2,499</p>
+        <button>Buy Now</button>
+    </div>
+
+
     </div>
 </body>
 </html>
