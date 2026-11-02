@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="loginbtn" onclick="loginbtn()">login</button>
+    <button id="Followbtn" onclick="followbtn()">Follow</button>
+
+    <p id="myp">this is old dull para</p>
+    <button onclick="updatecss()">Update style</button>
+
+    <div id="mydiv">this is div tag</div>
+    <button onclick="updateTag()">update div</button>
+
+    <script>
+     function loginbtn(){
+
+        const loginbtn = document.getElementById("loginbtn")
+
+        loginbtn.textContent = "logout"
+
+        
+
+     }
+     function followbtn(){
+
+        const followbtn = document.getElementById("followbtn")
+
+        followbtn.textContent ="following"
+     }
+     
+     function updatecss(){
+
+        const para = document.getElementById("myp")
+
+        para.style.color = "red"
+        para.style.backgroundColor ="blue"
+        para.style.textAlign = "center"
+        para.textContent = "new style"
+     }
+
+     function updateTag(){
+
+        //innerHtTMl - update the tag itself
+        const box = document.getElementById("mydiv")
+
+        //update into 1 tag
+        // box.innerHTML = "<h1>heading Tag</h1>"
+
+        //multiple Tags
+        box.innerHTML = `
+         <h2>Second</h2>
+         <button>Greet</button>
+         <p>this is para tag</p>
+        `
+     }
+    </script>
+</body>
+</html>

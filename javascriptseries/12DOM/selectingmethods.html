@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="myp">This is paragraph tag</p>
+    <p>thia is 2 paragraph tag</p>
+
+    <div class="box"> Div box - 0</div>
+    <div class="box"> Div box -1</div>
+
+    <script>
+        //document = Webpage
+        //element = tag
+        const para = document.getElementById('myp') //selected html paragraph in js
+        console.log(para)
+        console.log(para.textContent)
+
+        const box = document.getElementsByClassName("box")
+        console.log(box)
+        console.log(box[0])
+        console.log(box[0].textContent)
+
+        const ptag = document.getElementsByTagName("p")
+        console.log(ptag)
+        console.log(ptag[0])
+
+        //query selector : it follows ccss rule - #idname, .classname,tagnane
+        //it will only select the first tag element
+
+        const boxes = document.querySelector(".box")
+        console.log(boxes)
+
+        const container = document.querySelectorAll(".box")
+        console.log(container)
+    </script>
+    
+</body>
+</html>
